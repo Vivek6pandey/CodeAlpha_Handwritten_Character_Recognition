@@ -1,0 +1,32 @@
+CODEALPHA MACHINE LEARNING INTERNSHIP
+TASK 3 — HANDWRITTEN CHARACTER RECOGNITION
+
+1. Objective
+The objective is to recognize handwritten digits using image processing and a Convolutional Neural Network (CNN).
+
+2. Dataset
+The project uses the MNIST dataset. Each example is a 28×28 grayscale image representing one of the digits 0–9.
+
+3. Technologies Used
+Python, TensorFlow/Keras, NumPy, Matplotlib, Scikit-learn and Seaborn.
+
+4. Preprocessing
+• Pixel values are converted to floating-point values.
+• Pixel intensity is normalized from 0–255 to the range 0–1.
+• A channel dimension is added so the images can be supplied to Conv2D layers.
+• The training set is split internally into training and validation portions.
+
+5. CNN Architecture
+The model contains two convolutional blocks with ReLU activation and max-pooling, followed by a flatten layer, a dense layer, dropout and a 10-class softmax output layer.
+
+6. Training
+The CNN is trained using the Adam optimizer and sparse categorical cross-entropy loss. Five epochs are used in the supplied implementation.
+
+7. Evaluation
+The model is evaluated on the separate MNIST test set. The program generates test accuracy, a classification report, a confusion matrix and sample predictions. It also saves the training/validation accuracy curve.
+
+8. Result
+The exact test accuracy and classification metrics are produced when the program is run and are printed in the terminal. The output images provide visual evidence of model performance.
+
+9. Conclusion
+The project demonstrates an end-to-end deep-learning workflow for handwritten digit recognition: loading the dataset, preprocessing images, constructing a CNN, training the model and evaluating predictions. The system can later be extended to EMNIST for broader handwritten character recognition.
